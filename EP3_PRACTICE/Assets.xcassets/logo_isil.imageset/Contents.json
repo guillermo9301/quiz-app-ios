@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "logo_isil.jpeg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
