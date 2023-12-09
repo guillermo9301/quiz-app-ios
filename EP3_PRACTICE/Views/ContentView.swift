@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(\.managedObjectContext) var moc
+    @Environment(\.presentationMode) var dismiss
+    
     @StateObject var manager = QuizManager()
-    @State var result = ""
+    @State var result = 0
     @State var showResult = false
     
     @State var page = 0
@@ -78,7 +81,10 @@ struct ContentView: View {
                         if manager.canSubmitQuiz() == true {
                             showResult = true
                             result = manager.gradeQuiz()
+                            DataController().addResult(name: "Guillermo", score: Int16(result), date: Date(), context: moc)
+                            dismiss.wrappedValue.dismiss()
                         }
+                        
                     } label: {
                         Text("Terminar prueba")
                             .padding()

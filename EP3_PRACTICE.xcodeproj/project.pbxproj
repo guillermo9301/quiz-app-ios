@@ -18,6 +18,9 @@
 		B3ABACBA2B0457BD0096604C /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3ABACB92B0457BD0096604C /* QuestionView.swift */; };
 		B3CF9DF42B216B010089CB8A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CF9DF32B216B010089CB8A /* NetworkManager.swift */; };
 		B3CF9DF62B2228850089CB8A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CF9DF52B2228850089CB8A /* Extensions.swift */; };
+		B3D8E9842B24DA9500532B3A /* ResultsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B3D8E9822B24DA9500532B3A /* ResultsModel.xcdatamodeld */; };
+		B3D8E9862B24DB6A00532B3A /* ResultDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D8E9852B24DB6A00532B3A /* ResultDataController.swift */; };
+		B3D8E9882B24E65A00532B3A /* RankingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D8E9872B24E65A00532B3A /* RankingsView.swift */; };
 		FB3509D92B056FE2007D4D50 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3509D82B056FE2007D4D50 /* ProgressBarView.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +38,9 @@
 		B3ABACB92B0457BD0096604C /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		B3CF9DF32B216B010089CB8A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		B3CF9DF52B2228850089CB8A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		B3D8E9832B24DA9500532B3A /* ResultsModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ResultsModel.xcdatamodel; sourceTree = "<group>"; };
+		B3D8E9852B24DB6A00532B3A /* ResultDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultDataController.swift; sourceTree = "<group>"; };
+		B3D8E9872B24E65A00532B3A /* RankingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingsView.swift; sourceTree = "<group>"; };
 		FB3509D82B056FE2007D4D50 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,6 +63,7 @@
 				B3ABACAC2B0456F00096604C /* ContentView.swift */,
 				FB3509D82B056FE2007D4D50 /* ProgressBarView.swift */,
 				B32CA3C92B069DB100A04803 /* TituloView.swift */,
+				B3D8E9872B24E65A00532B3A /* RankingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -98,6 +105,7 @@
 		B3ABACA92B0456F00096604C /* EP3_PRACTICE */ = {
 			isa = PBXGroup;
 			children = (
+				B3D8E9812B24DA1F00532B3A /* Data */,
 				B34443CF2B052E7200D8241B /* Controllers */,
 				B34443CA2B052AD100D8241B /* Models */,
 				B34443C92B052A6800D8241B /* Views */,
@@ -115,6 +123,15 @@
 				B3ABACB12B0456F10096604C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B3D8E9812B24DA1F00532B3A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B3D8E9822B24DA9500532B3A /* ResultsModel.xcdatamodeld */,
+				B3D8E9852B24DB6A00532B3A /* ResultDataController.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3D8E9842B24DA9500532B3A /* ResultsModel.xcdatamodeld in Sources */,
 				B3CF9DF42B216B010089CB8A /* NetworkManager.swift in Sources */,
 				B3ABACAD2B0456F00096604C /* ContentView.swift in Sources */,
 				B347D0F92B051BBD00219DED /* ResultView.swift in Sources */,
@@ -194,7 +212,9 @@
 				B3CF9DF62B2228850089CB8A /* Extensions.swift in Sources */,
 				B3ABACAB2B0456F00096604C /* EP3_PRACTICEApp.swift in Sources */,
 				B34443CC2B052B1700D8241B /* Questions.swift in Sources */,
+				B3D8E9882B24E65A00532B3A /* RankingsView.swift in Sources */,
 				FB3509D92B056FE2007D4D50 /* ProgressBarView.swift in Sources */,
+				B3D8E9862B24DB6A00532B3A /* ResultDataController.swift in Sources */,
 				B32CA3CA2B069DB100A04803 /* TituloView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,6 +402,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B3D8E9822B24DA9500532B3A /* ResultsModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B3D8E9832B24DA9500532B3A /* ResultsModel.xcdatamodel */,
+			);
+			currentVersion = B3D8E9832B24DA9500532B3A /* ResultsModel.xcdatamodel */;
+			path = ResultsModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B3ABAC9F2B0456F00096604C /* Project object */;
 }

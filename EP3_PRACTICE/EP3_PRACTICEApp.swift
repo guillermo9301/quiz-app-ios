@@ -10,9 +10,13 @@ import SwiftUI
 @main
 struct EP3_PRACTICEApp: App {
     @StateObject var appState = AppState.shared
+    @StateObject private var dataController = DataController()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView().id(appState.quizID)
+            ContentView()
+                .id(appState.quizID)
+                .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
 }

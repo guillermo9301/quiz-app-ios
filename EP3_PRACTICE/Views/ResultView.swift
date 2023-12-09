@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct ResultView: View {
-    @Binding var result: String
+    @Binding var result: Int
     @Environment(\.presentationMode) var dismiss
+    
+    @State var showSheet = false
         
     var body: some View {
         VStack {
@@ -27,6 +29,12 @@ struct ResultView: View {
                    
             Text("Su puntaje alcanzando es \(result)")
                 .resultText()
+            
+            Button(action: {
+                showSheet = true
+            }, label: {
+                Text("Ver puntajes")
+            })
                 
             Button(action: {
                 dismiss.wrappedValue.dismiss()
@@ -36,7 +44,9 @@ struct ResultView: View {
                             .textButton()
                         }
                      Spacer()
-                    }
+        }.sheet(isPresented: $showSheet) {
+            RankingsView()
+        }
             Image("isil")
                 .padding()
         }

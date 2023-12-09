@@ -50,14 +50,14 @@ class QuizManager: ObservableObject {
         return color
     }
     
-    func gradeQuiz() -> String {
+    func gradeQuiz() -> Int {
         var correct: Int = 0
         for question in mockQuestions {
             if question.answer == question.selection {
                 correct += 1
             }
         }
-        return "\((correct*2))"
+        return (correct*2)
     }
     
         
