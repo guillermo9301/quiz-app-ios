@@ -14,7 +14,7 @@ struct EP3_PRACTICEApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
                 .id(appState.quizID)
                 .environment(\.managedObjectContext, dataController.container.viewContext)
         }

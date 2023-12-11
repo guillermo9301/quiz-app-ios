@@ -55,6 +55,10 @@ extension Image {
             .scaledToFit()
             .frame(width: 220, height: 80)
     }
+    
+    func headerImage() -> some View {
+        self.resizable().scaledToFit().frame(width: 300, height: 80, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+    }
 }
 
 extension Text {

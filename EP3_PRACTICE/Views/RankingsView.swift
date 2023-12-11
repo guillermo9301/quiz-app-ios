@@ -10,7 +10,7 @@ import CoreData
 
 struct RankingsView: View {
     @Environment(\.managedObjectContext) var moc
-    @FetchRequest(sortDescriptors: [NSSortDescriptor(key: "score", ascending: true)]) var result: FetchedResults<Results>
+    @FetchRequest(sortDescriptors: [NSSortDescriptor(key: "score", ascending: false)]) var result: FetchedResults<Results>
     
     var body: some View {
         VStack(alignment: .leading) {

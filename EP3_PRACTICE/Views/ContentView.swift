@@ -11,6 +11,8 @@ struct ContentView: View {
     @Environment(\.managedObjectContext) var moc
     @Environment(\.presentationMode) var dismiss
     
+    //@StateObject private var dataController = DataController()
+    
     @StateObject var manager = QuizManager()
     @State var result = 0
     @State var showResult = false
@@ -18,6 +20,8 @@ struct ContentView: View {
     @State var page = 0
     @State var number = 1
     @State var progress: Float = 0.10
+    
+    @Binding var name: String
     
     var body: some View {
             VStack {
@@ -81,7 +85,7 @@ struct ContentView: View {
                         if manager.canSubmitQuiz() == true {
                             showResult = true
                             result = manager.gradeQuiz()
-                            DataController().addResult(name: "Guillermo", score: Int16(result), date: Date(), context: moc)
+                            DataController().addResult(name: name, score: Int16(result), date: Date(), context: moc)
                             dismiss.wrappedValue.dismiss()
                         }
                         
@@ -104,6 +108,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(name: .constant("Guillermo"))
     }
 }

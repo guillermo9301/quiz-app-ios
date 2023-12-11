@@ -11,6 +11,7 @@
 		B34443CC2B052B1700D8241B /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34443CB2B052B1700D8241B /* Questions.swift */; };
 		B34443CE2B052E6D00D8241B /* QuizController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34443CD2B052E6D00D8241B /* QuizController.swift */; };
 		B347D0F92B051BBD00219DED /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B347D0F82B051BBD00219DED /* ResultView.swift */; };
+		B3A8256A2B25819F00AE26FC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A825692B25819F00AE26FC /* HomeView.swift */; };
 		B3ABACAB2B0456F00096604C /* EP3_PRACTICEApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3ABACAA2B0456F00096604C /* EP3_PRACTICEApp.swift */; };
 		B3ABACAD2B0456F00096604C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3ABACAC2B0456F00096604C /* ContentView.swift */; };
 		B3ABACAF2B0456F10096604C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3ABACAE2B0456F10096604C /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 		B34443CB2B052B1700D8241B /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 		B34443CD2B052E6D00D8241B /* QuizController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizController.swift; sourceTree = "<group>"; };
 		B347D0F82B051BBD00219DED /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		B3A825692B25819F00AE26FC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B3ABACA72B0456F00096604C /* EP3_PRACTICE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EP3_PRACTICE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3ABACAA2B0456F00096604C /* EP3_PRACTICEApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EP3_PRACTICEApp.swift; sourceTree = "<group>"; };
 		B3ABACAC2B0456F00096604C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				FB3509D82B056FE2007D4D50 /* ProgressBarView.swift */,
 				B32CA3C92B069DB100A04803 /* TituloView.swift */,
 				B3D8E9872B24E65A00532B3A /* RankingsView.swift */,
+				B3A825692B25819F00AE26FC /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3D8E9842B24DA9500532B3A /* ResultsModel.xcdatamodeld in Sources */,
+				B3A8256A2B25819F00AE26FC /* HomeView.swift in Sources */,
 				B3CF9DF42B216B010089CB8A /* NetworkManager.swift in Sources */,
 				B3ABACAD2B0456F00096604C /* ContentView.swift in Sources */,
 				B347D0F92B051BBD00219DED /* ResultView.swift in Sources */,
