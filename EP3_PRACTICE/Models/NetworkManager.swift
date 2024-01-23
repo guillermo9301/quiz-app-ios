@@ -10,7 +10,7 @@ import Foundation
 class NetworkManager {
     static let shared = NetworkManager()
     
-    static let url = "https://guillermo93.pythonanywhere.com"
+    static let url = "https://guillermo93.pythonanywhere.com/quiz-data"
     
     init() {}
     
